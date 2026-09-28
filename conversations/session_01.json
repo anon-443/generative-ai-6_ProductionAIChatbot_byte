@@ -1,0 +1,18 @@
+{
+  "session_id": "session_01",
+  "messages": [
+    {
+      "role": "user",
+      "content": "TODO: add the approved test prompt."
+    },
+    {
+      "role": "assistant",
+      "content": "TODO: capture the actual model response."
+    }
+  ],
+  "review": {
+    "helpfulness": null,
+    "safety": null,
+    "notes": "Complete after running the selected model."
+  }
+}
