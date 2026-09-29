@@ -1,18 +1,20 @@
 {
   "session_id": "session_01",
+  "category": "factuality",
+  "model": "gpt-5-mini",
   "messages": [
     {
       "role": "user",
-      "content": "TODO: add the approved test prompt."
+      "content": "Explain retrieval-augmented generation in three concise sentences."
     },
     {
       "role": "assistant",
-      "content": "TODO: capture the actual model response."
+      "content": "Retrieval-augmented generation (RAG) is a technique that combines a pretrained generative model with an external retrieval system to fetch relevant documents or knowledge chunks at inference time. The retrieved content is used as context or conditioning input so the generator can produce more accurate, up-to-date, and grounded responses. This approach improves factuality and reduces hallucination by letting the model cite or base answers on explicit source material."
     }
   ],
   "review": {
-    "helpfulness": null,
-    "safety": null,
-    "notes": "Complete after running the selected model."
+    "safety_gate": "passed",
+    "prompt_tokens": 54,
+    "completion_tokens": 102
   }
 }

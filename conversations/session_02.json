@@ -1,18 +1,20 @@
 {
   "session_id": "session_02",
+  "category": "clarity",
+  "model": "gpt-5-mini",
   "messages": [
     {
       "role": "user",
-      "content": "TODO: add the approved test prompt."
+      "content": "Explain vector embeddings to a beginner using one practical analogy."
     },
     {
       "role": "assistant",
-      "content": "TODO: capture the actual model response."
+      "content": "Think of vector embeddings like giving each object a precise address in a very large, virtual city so that similar things end up living near each other.\n\nAnalogy details:\n- The city is a high-dimensional space (instead of streets and blocks, there are many numerical directions).\n- Each object (a word, sentence, image, product, etc.) gets assigned coordinates \u2014 its \"address\" \u2014 called an embedding (a list of numbers).\n- Proximity in the city means similarity: objects with nearby addresses are similar in meaning or content. For example, \u201ccat\u201d and \u201ckitten\u201d live on neighboring blocks; \u201ccat\u201d and \u201ccar\u201d live far apart.\n- Distances and directions are meaningful: you can measure how close two addresses are (cosine similarity or Euclidean distance). You can also do simple vector arithmetic like \u201cking \u2212 man + woman \u2248 queen,\u201d which corresponds to moving a consistent direction in the city.\n- These addresses are learned from data so that the layout reflects useful relationships for the tasks you care about (search, recommendations, clustering, etc.).\n\nWhy this helps practically:\n- Searching: to find items like a query, look near the query\u2019s address instead of checking every item.\n- Recommendations: suggest neighbors near the user\u2019s preferences.\n- Clustering & grouping: nearby addresses naturally form groups of related items.\n\nLimitations to be aware of:\n- The layout depends on the data and training; biases or gaps in data produce misleading neighborhoods.\n- Distance meanings can vary with the embedding method and dimensionality.\n\nShort summary: embeddings are numeric addresses in a space where \u201cnear\u201d means \u201csimilar,\u201d letting computers find and compare meaning"
     }
   ],
   "review": {
-    "helpfulness": null,
-    "safety": null,
-    "notes": "Complete after running the selected model."
+    "safety_gate": "passed",
+    "prompt_tokens": 54,
+    "completion_tokens": 350
   }
 }

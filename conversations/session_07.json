@@ -1,18 +1,20 @@
 {
   "session_id": "session_07",
+  "category": "helpfulness",
+  "model": "gpt-5-mini",
   "messages": [
     {
       "role": "user",
-      "content": "TODO: add the approved test prompt."
+      "content": "Create a four-step study plan for learning prompt evaluation."
     },
     {
       "role": "assistant",
-      "content": "TODO: capture the actual model response."
+      "content": "Here\u2019s a concise four-step study plan to learn prompt evaluation (assessing and improving prompts for LLMs). Each step includes goals, activities, and suggested time estimates you can adjust.\n\nStep 1 \u2014 Foundations: understand prompts, model behavior, and evaluation basics\n- Goal: Grasp what prompt evaluation is, key concepts (prompt types, instruction-following, few-shot, chain-of-thought, temperature, metrics).\n- Activities:\n  - Read short primers/articles on prompt engineering and LLM behavior (2\u20134 articles/blogs).\n  - Learn basics of evaluation metrics: accuracy, BLEU/ROUGE (for text overlap), precision/recall, and human evaluation dimensions (correctness, relevance, fluency, safety, robustness).\n  - Watch 1\u20132 overview videos or tutorials.\n- Time: 1 week.\n\nStep 2 \u2014 Hands-on: craft and run simple evaluations\n- Goal: Practice creating prompts and measuring responses with basic metrics.\n- Activities:\n  - Choose one or two tasks (e.g., classification, summarization, Q&A).\n  - Design baseline prompts (zero-shot, few-shot, instruction-style).\n  - Run prompts against an accessible LLM or playground. Collect outputs for a small test set (20\u201350 examples).\n  - Compute simple automatic metrics (accuracy for classification, ROUGE for summarization) and log errors.\n- Time: 1\u20132 weeks.\n\nStep 3 \u2014 Systematic evaluation and analysis\n- Goal: Learn robust evaluation practices and analyze failure modes.\n- Activities:\n  - Expand dataset size (100\u2013500 examples). Create test splits and ensure diversity.\n "
     }
   ],
   "review": {
-    "helpfulness": null,
-    "safety": null,
-    "notes": "Complete after running the selected model."
+    "safety_gate": "passed",
+    "prompt_tokens": 54,
+    "completion_tokens": 350
   }
 }

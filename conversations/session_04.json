@@ -1,18 +1,20 @@
 {
   "session_id": "session_04",
+  "category": "reasoning",
+  "model": "gpt-5-mini",
   "messages": [
     {
       "role": "user",
-      "content": "TODO: add the approved test prompt."
+      "content": "Compare deploying a chatbot on a serverless platform versus a long-running container."
     },
     {
       "role": "assistant",
-      "content": "TODO: capture the actual model response."
+      "content": "Below is a practical comparison of deploying a chatbot on a serverless platform (Function-as-a-Service, FaaS; e.g., AWS Lambda, Google Cloud Functions, Azure Functions) versus a long-running container (e.g., Docker on ECS/EKS/GKE, Azure Container Instances, a VM). I focus on typical chatbot workloads (API endpoints that call models or model APIs, possibly with some state/cache, moderate concurrency, and variable traffic).\n\n1) Cost\n- Serverless\n  - Pros: Pay-per-use (you pay for invocation time and memory used). Very cheap for low or spiky traffic because you aren\u2019t billed for idle time.\n  - Cons: For consistently high sustained usage, per-invocation billing can be more expensive than a reserved container/VM. Cold-start penalties can also increase effective cost if you must over-provision memory to reduce latency.\n- Long-running container\n  - Pros: Predictable flat costs (reserved instances or always-on containers); can be cheaper at high sustained throughput.\n  - Cons: You pay for reserved compute even when idle.\n\n2) Scalability & elasticity\n- Serverless\n  - Pros: Automatic rapid scaling up to many concurrent executions without manual capacity planning.\n  - Cons: Platform concurrency limits and cold starts at scale; per-account throttles must be managed. External rate limits (model APIs) can become bottlenecks.\n- Long-running container\n  - Pros: With Kubernetes/managed container services you can autoscale via metrics (CPU, requests, custom), and scale stateful components more predictably.\n  - Cons: Autoscaling typically requires tuning and might be slower to scale"
     }
   ],
   "review": {
-    "helpfulness": null,
-    "safety": null,
-    "notes": "Complete after running the selected model."
+    "safety_gate": "passed",
+    "prompt_tokens": 58,
+    "completion_tokens": 350
   }
 }

@@ -1,7 +1,9 @@
 # Model and safety card
 
-- Model/checkpoint: TODO
-- Version: TODO
-- Official source/license URL: TODO
-- Safety filters: block credential theft, malware, self-harm instructions, and personal-data extraction; review false positives.
-- Known limitations: hallucinations, stale knowledge, ambiguous requests.
+- Model: `gpt-5-mini`
+- Access method: OpenAI-compatible Chat Completions API
+- Model catalog: https://platform.openai.com/docs/models
+- API documentation: https://platform.openai.com/docs/api-reference/chat
+- Safety policy: requests involving credential theft, malware, hidden prompts, or privacy abuse are refused.
+- Evaluation set: 10 conversations in `conversations/`.
+- Limitation: outputs are probabilistic and require human review before production use.

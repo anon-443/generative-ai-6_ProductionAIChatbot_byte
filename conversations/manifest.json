@@ -1,0 +1,16 @@
+{
+  "model": "gpt-5-mini",
+  "session_count": 10,
+  "sessions": [
+    "session_01",
+    "session_02",
+    "session_03",
+    "session_04",
+    "session_05",
+    "session_06",
+    "session_07",
+    "session_08",
+    "session_09",
+    "session_10"
+  ]
+}
